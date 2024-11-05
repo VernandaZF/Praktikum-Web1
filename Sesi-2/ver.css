@@ -1,0 +1,264 @@
+/* Reset and Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('Gambar/Background.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background: rgba(30, 58, 138, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #f4a261;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+.btn {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #f4a261;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #f4a261;
+    color: #1e3a8a;
+    transform: translateY(-5px);
+}
+
+/* Content Styling */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #f4a261;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+h4 {
+    color: #f4a261;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    padding: 60px 5%;
+    background: #f1faee;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+}
+
+.about-text h5 {
+    font-size: 1.2rem;
+    color: #f4a261;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #5d737e;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Service Section */
+.service {
+    background: #e9ecef;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2.8rem;
+    color: #1e3a8a;
+}
+
+.box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    font-size: 1rem;
+    color: #5d737e;
+}
+
+/* Contact Section */
+.kontak-saya {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.kontak-saya p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.kontak-saya .button-dua {
+    background: #f4a261;
+    color: #1e3a8a;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.kontak-saya .button-dua:hover {
+    background: #fff;
+    color: #1e3a8a;
+    border: 2px solid #f4a261;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #ddd;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.sosial {
+    margin: 20px 0;
+}
+
+.sosial a {
+    color: #f4a261;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.sosial a:hover {
+    transform: scale(1.2);
+}
+
+.end {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+}
